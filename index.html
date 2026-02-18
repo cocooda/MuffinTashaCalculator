@@ -4,10 +4,47 @@
   <meta charset="UTF-8">
   <title data-i18n="title">Muffin – Tasha Event Calculator</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="Optimize Stellarite spending and maximize Tasha gains with this event calculator.">
 </head>
+
 <body>
 
 <div class="container">
+
+  <div class="duck-logo">
+    <svg width="120" height="120" viewBox="0 0 200 200">
+      <!-- Body -->
+      <ellipse cx="100" cy="120" rx="50" ry="45" fill="#FFD700" class="body"/>
+
+      <!-- Head -->
+      <circle cx="100" cy="70" r="30" fill="#FFD700" class="head"/>
+
+      <!-- Beak -->
+      <path d="M 120 70 Q 140 70 145 75 Q 140 80 120 80 Z"
+            fill="#FF8C00" class="beak"/>
+
+      <!-- Eye -->
+      <circle cx="110" cy="65" r="4" fill="#000" class="eye"/>
+
+      <!-- Wing -->
+      <ellipse cx="125" cy="115" rx="18" ry="25"
+              fill="#FFA500" class="wing"/>
+
+      <!-- Feet -->
+      <g class="feet">
+        <path d="M 85 160 L 80 170 L 85 172 L 88 170 L 90 172 L 93 170 Z"
+              fill="#FF8C00"/>
+        <path d="M 110 160 L 105 170 L 110 172 L 113 170 L 115 172 L 118 170 Z"
+              fill="#FF8C00"/>
+      </g>
+
+      <!-- Cheek -->
+      <ellipse cx="88" cy="75" rx="6" ry="4"
+              fill="#FFB6C1" opacity="0.6"/>
+    </svg>
+  </div>
+
 
   <!-- Language Switch -->
   <div class="lang-switch">
@@ -15,8 +52,10 @@
     <button id="lang-toggle">EN</button>
   </div>
 
+  <div class="page-title">
+    <h1 data-i18n="title">Muffin – Tasha Event Calculator</h1>
+  </div>
 
-  <h1 data-i18n="title">Muffin – Tasha Event Calculator</h1>
 
   <div class="card">
 
@@ -54,14 +93,22 @@
         </tr>
 
         <tr>
-          <td data-i18n="melo">Melomon Strings</td>
+          <td class="item-cell second">
+            <span data-i18n="melo">Melo</span>
+            <span class="badge">👍</span>
+          </td>
           <td><input type="number" id="melo" class="resource-input" min="0"></td>
           <td id="melo-pp">0</td>
           <td id="melo-tasha">0</td>
         </tr>
 
         <tr>
-          <td data-i18n="mount">Mount Summons</td>
+          
+          <td class="item-cell best">
+            <span data-i18n="mount">Mount Summons</span>
+            <span class="badge">⭐</span>
+          </td>
+
           <td><input type="number" id="mount" class="resource-input" min="0"></td>
           <td id="mount-pp">0</td>
           <td id="mount-tasha">0</td>
@@ -75,21 +122,32 @@
         </tr>
 
         <tr>
-          <td data-i18n="rune">Runes</td>
+          <td class="item-cell second">
+            <span data-i18n="rune">Runes</span>
+            <span class="badge">👍</span>
+          </td>
           <td><input type="number" id="rune" class="resource-input" min="0"></td>
           <td id="rune-pp">0</td>
           <td id="rune-tasha">0</td>
         </tr>
 
         <tr>
-          <td data-i18n="wood">Wood</td>
+          <td class="item-cell leaf">
+            
+            <span data-i18n="wood">Wood</span>
+            <span class="badge">🌱</span>
+          </td>
           <td><input type="number" id="wood" class="resource-input" min="0"></td>
           <td>-</td>
           <td id="wood-tasha">0</td>
         </tr>
 
         <tr>
-          <td data-i18n="stellar">Stellar</td>
+          <td class="item-cell leaf">
+            
+            <span data-i18n="stellar">Stellar</span>
+            <span class="badge">🌱</span>
+          </td>
           <td><input type="number" id="stellar" class="resource-input" min="0"></td>
           <td>-</td>
           <td id="stellar-tasha">0</td>
@@ -136,11 +194,23 @@
 
     <div class="result" id="summary"></div>
 
+    <hr class="divider">
+
+    <div class="about"> 
+      <h4 data-i18n="aboutTitle">About This Tool</h4>
+      <p data-i18n="aboutText">
+        This tool calculates the optimal Stellarite allocation strategy
+        to maximize Tasha gains during event cycles.
+      </p>
+    </div>
+
+
   </div>
+
 
   <footer>
     <p data-i18n="footerText">
-      © 2026 Muffin. Fan-made event calculator. Not affiliated with the official game.
+      © 2026 cocooda (Duc Nguyen). Fan-made event calculator. Not affiliated with the official game.
     </p>
   </footer>
   

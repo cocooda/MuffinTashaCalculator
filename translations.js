@@ -37,8 +37,9 @@ const translations = {
 
     switchLanguage: "Switch Language",
     pp: "PP",
-    footerText: "© 2026 cocooda – Duc Nguyen. Fan-made event calculator. Not affiliated with the official game."
-
+    footerText: "© 2026 cocooda – Duc Nguyen. Fan-made event calculator. Not affiliated with the official game.",
+    aboutTitle: "About This Tool",
+    aboutText: "This tool calculates the optimal Stellarite allocation strategy to maximize Tasha gains during event cycles."
   },
 
   vi: {
@@ -66,7 +67,7 @@ const translations = {
     melo: "Melomon",
     mount: "Thú Cưỡi",
     artifact: "Năng Lượng Báu",
-    rune: "Rune Chiêu Thức",
+    rune: "Rune",
     wood: "Gỗ",
     stellar: "Sao non",
 
@@ -77,6 +78,8 @@ const translations = {
     
     switchLanguage: "Chuyển Ngôn Ngữ",
     pp: "PP",
-    footerText: "© 2026 cocooda – Đức Nguyễn. Công cụ tính sự kiện do fan tạo. Không liên kết với nhà phát hành chính thức."
+    footerText: "© 2026 cocooda – Đức Nguyễn. Công cụ tính sự kiện do fan tạo. Không liên kết với nhà phát hành chính thức.",
+    aboutTitle: "Giới thiệu",
+    aboutText: "Công cụ tính toán cách tiêu tài nguyên hợp lí nhất để tối đa điểm Tasha miễn phí."
   }
 };
