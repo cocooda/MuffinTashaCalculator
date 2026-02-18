@@ -39,7 +39,7 @@ const translations = {
     pp: "PP",
     footerText: "© 2026 cocooda – Duc Nguyen. Fan-made event calculator. Not affiliated with the official game.",
     aboutTitle: "About This Tool",
-    aboutText: "This tool calculates the optimal Stellarite allocation strategy to maximize Tasha gains during event cycles."
+    aboutText: "This tool calculates the optimal resources allocation strategy to maximize Tasha gains during free event cycles."
   },
 
   vi: {
