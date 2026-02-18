@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="title">Muffin – Tasha Event Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Language Switch -->
+  <div class="lang-switch">
+    <div class="lang-label" data-i18n="switchLanguage">Switch Language</div>
+    <button id="lang-toggle">EN</button>
+  </div>
+
+
+  <h1 data-i18n="title">Muffin – Tasha Event Calculator</h1>
+
+  <div class="card">
+
+    <!-- Extra Info -->
+    <div class="section grid-3">
+      <div>
+        <label data-i18n="currentTasha">Current Tasha</label>
+        <input type="number" id="current-tasha" min="0" value="0">
+      </div>
+
+      <div>
+        <label data-i18n="daysLeft">Days Left (Max 8)</label>
+        <input type="number" id="days-left" min="0" max="8" value="0">
+      </div>
+    </div>
+
+    <h2 data-i18n="resources">Resources</h2>
+
+    <table class="calc-table">
+      <thead>
+        <tr>
+          <th data-i18n="item">Item</th>
+          <th data-i18n="amount">Amount</th>
+          <th data-i18n="pp">PP</th>
+          <th data-i18n="tasha">Tasha</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td data-i18n="skill">Skill Summons</td>
+          <td><input type="number" id="skill" class="resource-input" min="0"></td>
+          <td id="skill-pp">0</td>
+          <td id="skill-tasha">0</td>
+        </tr>
+
+        <tr>
+          <td data-i18n="melo">Melomon Strings</td>
+          <td><input type="number" id="melo" class="resource-input" min="0"></td>
+          <td id="melo-pp">0</td>
+          <td id="melo-tasha">0</td>
+        </tr>
+
+        <tr>
+          <td data-i18n="mount">Mount Summons</td>
+          <td><input type="number" id="mount" class="resource-input" min="0"></td>
+          <td id="mount-pp">0</td>
+          <td id="mount-tasha">0</td>
+        </tr>
+
+        <tr>
+          <td data-i18n="artifact">Artifact Energy</td>
+          <td><input type="number" id="artifact" class="resource-input" min="0"></td>
+          <td id="artifact-pp">0</td>
+          <td id="artifact-tasha">0</td>
+        </tr>
+
+        <tr>
+          <td data-i18n="rune">Runes</td>
+          <td><input type="number" id="rune" class="resource-input" min="0"></td>
+          <td id="rune-pp">0</td>
+          <td id="rune-tasha">0</td>
+        </tr>
+
+        <tr>
+          <td data-i18n="wood">Wood</td>
+          <td><input type="number" id="wood" class="resource-input" min="0"></td>
+          <td>-</td>
+          <td id="wood-tasha">0</td>
+        </tr>
+
+        <tr>
+          <td data-i18n="stellar">Stellar</td>
+          <td><input type="number" id="stellar" class="resource-input" min="0"></td>
+          <td>-</td>
+          <td id="stellar-tasha">0</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h2 data-i18n="packs">Available Packs</h2>
+
+    <div class="package-grid">
+
+      <div class="package-card">
+        <div data-i18n="packStellar">40 Stellarites → 10 Tasha</div>
+        <input type="number" id="pack-stellar" min="0" max="30" value="0">
+        <div class="pack-info" id="pack-stellar-info"></div>
+      </div>
+
+      <div class="package-card">
+        <div data-i18n="pack099">$0.99 → 30 Tasha</div>
+        <input type="number" id="pack-099" min="0" max="1" value="0">
+        <div class="pack-info" id="pack-099-info"></div>
+      </div>
+
+      <div class="package-card">
+        <div data-i18n="pack499">$4.99 → 120 Tasha</div>
+        <input type="number" id="pack-499" min="0" max="1" value="0">
+        <div class="pack-info" id="pack-499-info"></div>
+      </div>
+
+      <div class="package-card">
+        <div data-i18n="pack999">$9.99 → 200 Tasha</div>
+        <input type="number" id="pack-999" min="0" max="2" value="0">
+        <div class="pack-info" id="pack-999-info"></div>
+      </div>
+
+    </div>
+
+    <!-- Stellarite Section -->
+    <div class="section">
+      <label data-i18n="availableStellarites">Available Stellarites</label>
+      <input type="number" id="available-stellarites" class="resource-input" min="0" value="0">
+    </div>
+
+    <div class="result" id="summary"></div>
+
+  </div>
+
+  <footer>
+    <p data-i18n="footerText">
+      © 2026 Muffin. Fan-made event calculator. Not affiliated with the official game.
+    </p>
+  </footer>
+  
+</div>
+
+<!-- IMPORTANT: Load translations BEFORE script -->
+<script src="translations.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

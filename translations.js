@@ -1,0 +1,82 @@
+const translations = {
+  en: {
+    title: "Muffin – Tasha Event Calculator",
+    currentTasha: "Current Tasha",
+    daysLeft: "Days Left (Max 8)",
+    resources: "Resources",
+    packs: "Available Packs",
+    availableStellarites: "Available Stellarites",
+    totalPP: "Total PP",
+    baseTasha: "Tasha From Resources",
+    dailyTasha: "Daily Tasha",
+    packageTasha: "Package Tasha",
+    totalPossible: "TOTAL POSSIBLE TASHA",
+    spendPlan: "Spend Plan",
+    first: "First",
+    next: "Next",
+    pulls: "pulls",
+    tasha: "Tasha",
+    warningPP: "⚠ Warning: PP Overflow (> 9000 points)",
+    item: "Item",
+    amount: "Amount",
+
+    // Resources
+    skill: "Skill",
+    melo: "Melomon",
+    mount: "Mount",
+    artifact: "Artifact Energy",
+    rune: "Runes",
+    wood: "Wood",
+    stellar: "Stellar",
+
+    // Packs
+    packStellar: "40 Stellarites → 10 Tasha",
+    pack099: "$0.99 → 30 Tasha",
+    pack499: "$4.99 → 120 Tasha",
+    pack999: "$9.99 → 200 Tasha",
+
+    switchLanguage: "Switch Language",
+    pp: "PP",
+    footerText: "© 2026 cocooda – Duc Nguyen. Fan-made event calculator. Not affiliated with the official game."
+
+  },
+
+  vi: {
+    title: "Muffin – Công Cụ Tính Điểm Tasha",
+    currentTasha: "Điểm Tasha Hiện Tại",
+    daysLeft: "Số Ngày Còn Lại (Tối đa 8)",
+    resources: "Tài Nguyên",
+    packs: "Gói Mua",
+    availableStellarites: "Ngọc Hiện Có",
+    totalPP: "Tổng PP",
+    baseTasha: "Tasha Từ Tài Nguyên",
+    dailyTasha: "Tasha Hằng Ngày",
+    packageTasha: "Tasha Từ Gói",
+    totalPossible: "TỔNG TASHA CÓ THỂ ĐẠT",
+    spendPlan: "Lựa chọn tốt nhất",
+    first: "Bước 1",
+    next: "Tiếp Theo",
+    pulls: "lượt quay",
+    tasha: "Tasha",
+    warningPP: "⚠ Cảnh báo: PP vượt 9000 điểm",
+    item: "Vật phẩm",
+    amount: "Số lượng",
+
+    skill: "Kỹ Năng",
+    melo: "Melomon",
+    mount: "Thú Cưỡi",
+    artifact: "Năng Lượng Báu",
+    rune: "Rune Chiêu Thức",
+    wood: "Gỗ",
+    stellar: "Sao non",
+
+    packStellar: "40 Ngọc → 10 Tasha",
+    pack099: "28000 vnd → 30 Tasha",
+    pack499: "139000 vnd → 120 Tasha",
+    pack999: "219000 vnd → 200 Tasha",
+    
+    switchLanguage: "Chuyển Ngôn Ngữ",
+    pp: "PP",
+    footerText: "© 2026 cocooda – Đức Nguyễn. Công cụ tính sự kiện do fan tạo. Không liên kết với nhà phát hành chính thức."
+  }
+};
