@@ -27,7 +27,6 @@ document.getElementById("lang-toggle").addEventListener("click", () => {
   updateLanguage();
 });
 
-
 // ==========================
 // EVENT DATA
 // ==========================
@@ -409,4 +408,4 @@ function updateAll() {
 
 }
 
-updateAll();
+updateLanguage();
