@@ -58,6 +58,7 @@ const eventData = {
   },
   artifact: {
     ppPerItem: 3,
+    convertDivisor: 10, // 10 energy = 1 calc unit
     tiers: [
       { max: 300, cost: 50, tasha: 10 },
       { max: 1100, cost: 100, tasha: 20 }
@@ -65,12 +66,14 @@ const eventData = {
   },
   rune: {
     ppPerItem: 1,
+    convertDivisor: 10, // 10 rune = 1 calc unit
     tiers: [
       { max: 800, cost: 100, tasha: 10 },
       { max: 2400, cost: 200, tasha: 20 }
     ]
   },
   wood: {
+    convertDivisor: 10, // 10 wood = 1 calc unit
     tiers: [
       { max: 400, cost: 50, tasha: 10 },
       { max: 1100, cost: 100, tasha: 20 }
@@ -89,8 +92,15 @@ const eventData = {
 // CORE FUNCTIONS
 // ==========================
 
-function calculateResource(category, amount) {
+function calculateResource(category, rawAmount) {
   const resource = eventData[category];
+
+  // Apply floor division if needed
+  let amount = rawAmount;
+  if (resource.convertDivisor) {
+    amount = Math.floor(rawAmount / resource.convertDivisor);
+  }
+  
   let totalPP = resource.ppPerItem ? amount * resource.ppPerItem : 0;
   let totalTasha = 0;
 
